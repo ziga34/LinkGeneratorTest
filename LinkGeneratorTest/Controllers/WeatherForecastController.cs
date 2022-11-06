@@ -16,7 +16,6 @@ namespace LinkGeneratorTest.Controllers
         [HttpGet]
         public string? Get()
         {
-            var sdf = 12;
             return _linkGenerator.GetUriByAction("Get", "WeatherForecast", null, null, new("localhost"));
         }
     }
